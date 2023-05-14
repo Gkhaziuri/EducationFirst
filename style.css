@@ -11,8 +11,19 @@
     width: 100%;
     display: flex;
 }
+@media (max-width: 768px) {
+    .container {
+     width: 100%;
+     display: block;
+    } 
+ }
 .left-side {
     width: 581px;
+}
+@media (max-width: 768px) {
+    .left-side{
+        width: 100%;
+    }
 }
 .left-side img {
     width: 600px;
@@ -24,11 +35,31 @@
     border: 1px solid white;
     width: 100%;
 }
+@media (max-width: 768px) {
+     .right-side {
+        border-radius: 22px 22px 0 0;
+     }
+ }
 .right-side {
     margin: 0 auto;
 }
 .tittle {
     text-align: center;
+}
+@media (max-width: 768px) {
+    .tittle img {
+        width: 250px;
+        height: 250px;
+    }
+}
+.resp-input {
+    display: none;
+    
+}
+@media (max-width: 768px) {
+    .resp-input {
+        display: block;
+    }
 }
 .registration-form {
     display: flex;
@@ -45,6 +76,11 @@ h4 {
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
 }
+@media (max-width: 768px){
+    .name-mail {
+        display: none;
+    }
+}
 input {
     width: 500px;
     margin-bottom: 30px;
@@ -53,6 +89,22 @@ input {
     border-top: none;
     border-right: none;
     padding: 10px;
+}
+@media (max-width: 768px){
+    input {
+        width: 500px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(79, 79, 79, 0.3);;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    input {
+        width: 400px;
+    }
 }
 input::placeholder {
     font-weight: 600;
@@ -70,6 +122,17 @@ input::placeholder {
     border-top: none;
     border-right: none;
     padding: 10px;
+}
+@media (max-width: 768px) {
+    .pass input {
+        width: 400px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(79, 79, 79, 0.3);;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        padding: 10px;
+    }
 }
 .pass input::placeholder {
     color: #94B7CD;
@@ -103,12 +166,22 @@ input::placeholder {
     font-weight: 600;
     font-size: 16px;
 }
+@media (max-width: 768px) {
+    .terms-conditions {
+        display: none;
+    }
+}
 .login {
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .login {
+        display:none;
+    }
 }
 .login p {
     font-family: 'Inter', sans-serif;
